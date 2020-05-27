@@ -16,8 +16,9 @@ resultDict[1]=$var2
 resultDict[2]=$var3
 resultDict[3]=$var4
 
+echo "Descending Order"
 for i in ${!resultDict[@]}
 do
         resultArray[$i]=${resultDict[$i]}
         echo "${resultArray[$i]}"
-done
+done | sort -k1 -nr | head -4
