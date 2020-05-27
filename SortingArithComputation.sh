@@ -22,3 +22,10 @@ do
         resultArray[$i]=${resultDict[$i]}
         echo "${resultArray[$i]}"
 done | sort -k1 -nr | head -4
+
+echo "Ascending Order "
+for i in ${!resultDict[@]}
+do
+        resultArray[$i]=${resultDict[$i]}
+        echo "${resultArray[$i]}"
+done | sort -k1 -n | head -4
