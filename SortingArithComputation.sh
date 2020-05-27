@@ -6,4 +6,4 @@ read -p "Enter third input: " c
 
 var1=$( echo $a $b $c | awk '{print $1+$2*$3}' )
 var2=$( echo $a $b $c | awk '{print $1*$2+$3}' )
-
+var3=$( echo $c $a $b | awk '{print $1+$2/$3}' )
