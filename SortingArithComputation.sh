@@ -15,3 +15,9 @@ resultDict[0]=$var1
 resultDict[1]=$var2
 resultDict[2]=$var3
 resultDict[3]=$var4
+
+for i in ${!resultDict[@]}
+do
+        resultArray[$i]=${resultDict[$i]}
+        echo "${resultArray[$i]}"
+done
